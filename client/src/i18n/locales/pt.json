@@ -1,0 +1,80 @@
+{
+  "nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "projects": "Projetos",
+    "blog": "Blog",
+    "contact": "Contato",
+    "language": "Idioma"
+  },
+  "hero": {
+    "title": "Desenvolvedor Full Stack .NET",
+    "subtitle": "Construindo aplicações web modernas e escaláveis com código limpo e boas práticas internacionais",
+    "cta": "Ver Meu Trabalho",
+    "scroll": "Role para explorar"
+  },
+  "about": {
+    "title": "Sobre Mim",
+    "intro": "Sou Everton Leão, um Desenvolvedor Full Stack .NET versátil com 4+ anos de experiência prática em design, desenvolvimento e manutenção de aplicações web.",
+    "expertise": "Especialidades",
+    "skills": [
+      "C# & ASP.NET Core",
+      "Design de API RESTful",
+      "SQL Server & Design de Banco de Dados",
+      "Tecnologias Frontend (HTML5, CSS3, JavaScript)",
+      "Azure DevOps & Serviços em Nuvem",
+      "Metodologias Ágeis"
+    ],
+    "cta": "Baixar Currículo"
+  },
+  "projects": {
+    "title": "Projetos em Destaque",
+    "subtitle": "Uma seleção de meus trabalhos recentes mostrando habilidades técnicas e capacidade de resolução de problemas",
+    "viewProject": "Ver Projeto",
+    "technologies": "Tecnologias"
+  },
+  "blog": {
+    "title": "Blog Técnico",
+    "subtitle": "Insights sobre entrevistas técnicas, desenvolvimento de carreira e oportunidades internacionais",
+    "readMore": "Ler Artigo",
+    "published": "Publicado em",
+    "category": "Categoria",
+    "tags": "Tags",
+    "categories": {
+      "interviews": "Entrevistas Técnicas",
+      "career": "Desenvolvimento de Carreira",
+      "international": "Oportunidades Internacionais",
+      "technical": "Dicas Técnicas"
+    }
+  },
+  "contact": {
+    "title": "Entre em Contato",
+    "subtitle": "Vamos conversar sobre como podemos trabalhar juntos",
+    "form": {
+      "name": "Nome Completo",
+      "email": "Endereço de Email",
+      "subject": "Assunto",
+      "message": "Mensagem",
+      "submit": "Enviar Mensagem",
+      "sending": "Enviando...",
+      "success": "Mensagem enviada com sucesso!",
+      "error": "Falha ao enviar mensagem. Tente novamente."
+    },
+    "info": {
+      "email": "Email",
+      "phone": "Telefone",
+      "location": "Localização"
+    }
+  },
+  "footer": {
+    "copyright": "© 2026 Everton Leão. Todos os direitos reservados.",
+    "links": "Links Rápidos",
+    "social": "Siga-me"
+  },
+  "common": {
+    "loading": "Carregando...",
+    "error": "Erro",
+    "back": "Voltar",
+    "close": "Fechar"
+  }
+}
