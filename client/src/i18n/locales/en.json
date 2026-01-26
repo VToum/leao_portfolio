@@ -8,34 +8,66 @@
     "language": "Language"
   },
   "hero": {
-    "title": "Full Stack .NET Developer",
-    "subtitle": "Building scalable, modern web applications with clean code and international best practices",
+    "title": ".NET Full-Stack Developer",
+    "subtitle": "Building modern, scalable web applications with clean code, cloud-ready architecture, and international best practices",
     "cta": "View My Work",
     "scroll": "Scroll to explore"
   },
   "about": {
     "title": "About Me",
-    "intro": "I'm Everton Leão, a versatile Full Stack .NET Developer with 4+ years of hands-on experience designing, developing, and maintaining web applications.",
+    "intro": "I am Everton Leão, a results-driven .NET Full-Stack Developer with 4+ years of professional experience designing, developing, and maintaining web applications. I deliver scalable backend services, polished frontends, and reliable CI/CD pipelines while collaborating in Agile teams and following international best practices.",
     "expertise": "Expertise",
     "skills": [
       "C# & ASP.NET Core",
-      "RESTful API Design",
-      "SQL Server & Database Design",
-      "Frontend Technologies (HTML5, CSS3, JavaScript)",
-      "Azure DevOps & Cloud Services",
-      "Agile Methodologies"
+      "RESTful API Design & Integration",
+      "SQL Server, T-SQL & Database Design",
+      "Frontend: HTML5, CSS3, JavaScript, Bootstrap",
+      "Azure DevOps, CI/CD & Cloud Services (Azure)",
+      "Git, branching strategies & code review",
+      "Unit Testing, Integration Testing",
+      "Agile Methodologies (Scrum, Kanban)"
     ],
+    "certifications": [
+      ".NET Certification"
+    ],
+    "achievements": [
+      "Delivered production features and bug fixes across multiple web systems (add metrics)",
+      "Improved database performance and query efficiency (add metrics)",
+      "Collaborated with cross-functional teams to accelerate delivery and reduce incidents"
+    ],
+    "preferredRoles": [
+      "Full-Stack .NET Developer",
+      "Backend Developer (.NET)",
+      "Cloud Developer (Azure)"
+    ],
+    "availability": "Open to remote, hybrid, and international opportunities",
     "cta": "Download Resume"
   },
   "projects": {
     "title": "Featured Projects",
-    "subtitle": "A selection of my recent work showcasing technical skills and problem-solving abilities",
+    "subtitle": "A selection of recent work demonstrating technical skills, problem solving, and delivery",
     "viewProject": "View Project",
-    "technologies": "Technologies"
+    "technologies": "Technologies",
+    "items": [
+      {
+        "title": "Management System - AVIPAM",
+        "role": "Full-Stack .NET Developer",
+        "description": "Maintained and implemented new features for a production web system; optimized SQL queries and improved page load times; supported deployments and monitoring.",
+        "impact": "Reduced average response time and lowered incident rate (insert metrics)",
+        "technologies": "C#, ASP.NET Core, SQL Server, Azure DevOps"
+      },
+      {
+        "title": "Database Support & Optimization - SMIT",
+        "role": "Developer",
+        "description": "Designed and maintained database schemas, optimized complex queries, and supported backend integrations.",
+        "impact": "Improved query performance for critical reports (insert metrics)",
+        "technologies": "SQL Server, T-SQL, Git"
+      }
+    ]
   },
   "blog": {
-    "title": "Technical Blog",
-    "subtitle": "Insights on technical interviews, career development, and international opportunities",
+    "title": "Tech Blog",
+    "subtitle": "Insights on technical interviews, career growth, and international opportunities",
     "readMore": "Read Article",
     "published": "Published on",
     "category": "Category",
@@ -48,33 +80,59 @@
     }
   },
   "contact": {
-    "title": "Get In Touch",
-    "subtitle": "Let's discuss how we can work together",
+    "title": "Get in Touch",
+    "subtitle": "Let’s discuss how we can work together. I reply quickly via WhatsApp.",
     "form": {
       "name": "Full Name",
-      "email": "Email Address",
-      "subject": "Subject",
-      "message": "Message",
-      "submit": "Send Message",
-      "sending": "Sending...",
-      "success": "Message sent successfully!",
-      "error": "Failed to send message. Please try again."
+      "email": "Best Email (Optional)",
+      "subject": "Project Subject",
+      "message": "How can I help you?",
+      "submit": "Send via WhatsApp",
+      "success": "Redirecting to WhatsApp...",
+      "error": "Please fill in the required fields."
     },
     "info": {
       "email": "Email",
-      "phone": "Phone",
-      "location": "Location"
+      "phone": "WhatsApp / Phone",
+      "location": "São Paulo, Brazil"
     }
   },
   "footer": {
     "copyright": "© 2026 Everton Leão. All rights reserved.",
     "links": "Quick Links",
-    "social": "Follow Me"
+    "social": "Follow Me",
+    "note": "Open to remote and international opportunities"
   },
   "common": {
     "loading": "Loading...",
     "error": "Error",
     "back": "Back",
     "close": "Close"
+  },
+  "metadata": {
+    "keywords": [
+      ".NET",
+      "C#",
+      "ASP.NET Core",
+      "SQL Server",
+      "T-SQL",
+      "Azure",
+      "REST API",
+      "Full-Stack",
+      "DevOps",
+      "CI/CD",
+      "Unit Testing",
+      "Performance Optimization",
+      "Agile"
+    ],
+    "languageDefault": "en",
+    "resumeFiles": {
+      "en": "/cv-everton-leao-en.pdf",
+      "pt": "/cv-everton-leao-pt.pdf"
+    },
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/everton-leao",
+      "github": "https://github.com/everton-leao"
+    }
   }
 }

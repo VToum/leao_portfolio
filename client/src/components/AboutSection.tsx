@@ -4,14 +4,24 @@ import { Button } from '@/components/ui/button';
 import { Download } from 'lucide-react';
 
 export const AboutSection: React.FC = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const skills = t('about.skills', { returnObjects: true }) as string[];
+
+  // Detecta idioma (pt, pt-BR, en, en-US)
+  const isEnglish = i18n.language.startsWith('en');
+
+  const resumeFileName = isEnglish
+    ? 'Everton_Leao_Full_Stack_DotNet_EN.pdf'
+    : 'Everton_Leao_Desenvolvedor_FullStack_PT.pdf';
+
+  const resumeUrl = `/${resumeFileName}`;
 
   return (
     <section id="about" className="py-20 bg-secondary/30">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
           {/* Profile Image */}
           <div className="flex justify-center">
             <div className="relative w-64 h-64 md:w-80 md:h-80">
@@ -53,14 +63,16 @@ export const AboutSection: React.FC = () => {
               </div>
             </div>
 
-            {/* CTA */}
-            <Button
-              size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground"
-            >
-              <Download className="mr-2 h-5 w-5" />
-              {t('about.cta')}
-            </Button>
+            {/* Download automático por idioma */}
+            <a href={resumeUrl} download={resumeFileName}>
+              <Button
+                size="lg"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground"
+              >
+                <Download className="mr-2 h-5 w-5" />
+                {t('about.cta')}
+              </Button>
+            </a>
           </div>
         </div>
       </div>

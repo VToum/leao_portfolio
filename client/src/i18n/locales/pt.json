@@ -9,33 +9,65 @@
   },
   "hero": {
     "title": "Desenvolvedor Full Stack .NET",
-    "subtitle": "Construindo aplicações web modernas e escaláveis com código limpo e boas práticas internacionais",
+    "subtitle": "Construindo aplicações web escaláveis e confiáveis com foco em qualidade, performance e práticas internacionais",
     "cta": "Ver Meu Trabalho",
     "scroll": "Role para explorar"
   },
   "about": {
     "title": "Sobre Mim",
-    "intro": "Sou Everton Leão, um Desenvolvedor Full Stack .NET versátil com 4+ anos de experiência prática em design, desenvolvimento e manutenção de aplicações web.",
+    "intro": "Sou Everton Leão, Desenvolvedor Full Stack .NET com 4+ anos de experiência profissional em design, desenvolvimento e manutenção de aplicações web. Entrego soluções escaláveis, otimizo performance de bancos de dados e atuo em times ágeis com foco em entrega contínua.",
     "expertise": "Especialidades",
     "skills": [
       "C# & ASP.NET Core",
-      "Design de API RESTful",
-      "SQL Server & Design de Banco de Dados",
-      "Tecnologias Frontend (HTML5, CSS3, JavaScript)",
-      "Azure DevOps & Serviços em Nuvem",
-      "Metodologias Ágeis"
+      "Design e implementação de RESTful APIs",
+      "SQL Server, modelagem e otimização de queries",
+      "Frontend: HTML5, CSS3, JavaScript, Bootstrap",
+      "Azure DevOps, CI/CD e serviços em nuvem (Azure)",
+      "Git, branching strategies e code review",
+      "Testes unitários e integração",
+      "Metodologias Ágeis (Scrum/Kanban)"
     ],
+    "certifications": [
+      ".NET Certification"
+    ],
+    "achievements": [
+      "Entrega contínua de funcionalidades críticas em produção (ex.: X features em Y meses)",
+      "Melhoria de performance de consultas SQL reduzindo tempo médio em X%",
+      "Participação em migração/integração com serviços em nuvem (Azure) para aumentar disponibilidade"
+    ],
+    "preferredRoles": [
+      "Full-Stack .NET Developer",
+      "Backend Developer (.NET)",
+      "Cloud Developer (Azure)"
+    ],
+    "availability": "Aberto a oportunidades remotas, híbridas e internacionais",
     "cta": "Baixar Currículo"
   },
   "projects": {
     "title": "Projetos em Destaque",
-    "subtitle": "Uma seleção de meus trabalhos recentes mostrando habilidades técnicas e capacidade de resolução de problemas",
+    "subtitle": "Casos práticos que demonstram entrega, responsabilidade técnica e impacto",
     "viewProject": "Ver Projeto",
-    "technologies": "Tecnologias"
+    "technologies": "Tecnologias",
+    "items": [
+      {
+        "title": "Sistema de Gestão - AVIPAM",
+        "role": "Full-Stack .NET Developer",
+        "description": "Manutenção e desenvolvimento de novas funcionalidades; otimização de consultas; integração com serviços internos.",
+        "impact": "Melhoria de performance e redução de incidentes (insira métricas)",
+        "technologies": "C#, ASP.NET Core, SQL Server, Azure DevOps"
+      },
+      {
+        "title": "Suporte e Otimização de Banco - SMIT",
+        "role": "Developer",
+        "description": "Criação e manutenção de bancos de dados; otimização de queries; suporte a deploys.",
+        "impact": "Redução de tempo de execução de queries críticas (insira métricas)",
+        "technologies": "SQL Server, T-SQL, Git"
+      }
+    ]
   },
   "blog": {
     "title": "Blog Técnico",
-    "subtitle": "Insights sobre entrevistas técnicas, desenvolvimento de carreira e oportunidades internacionais",
+    "subtitle": "Artigos sobre entrevistas técnicas, boas práticas .NET e oportunidades internacionais",
     "readMore": "Ler Artigo",
     "published": "Publicado em",
     "category": "Categoria",
@@ -49,32 +81,57 @@
   },
   "contact": {
     "title": "Entre em Contato",
-    "subtitle": "Vamos conversar sobre como podemos trabalhar juntos",
+    "subtitle": "Vamos conversar sobre vagas ou projetos. Respondo rápido pelo WhatsApp!",
     "form": {
       "name": "Nome Completo",
-      "email": "Endereço de Email",
-      "subject": "Assunto",
-      "message": "Mensagem",
-      "submit": "Enviar Mensagem",
-      "sending": "Enviando...",
-      "success": "Mensagem enviada com sucesso!",
-      "error": "Falha ao enviar mensagem. Tente novamente."
+      "email": "Seu melhor Email (Opcional)",
+      "subject": "Assunto do Projeto",
+      "message": "Como posso te ajudar?",
+      "submit": "Enviar para meu WhatsApp",
+      "success": "Redirecionando para o WhatsApp...",
+      "error": "Por favor, preencha os campos obrigatórios."
     },
     "info": {
       "email": "Email",
-      "phone": "Telefone",
-      "location": "Localização"
+      "phone": "WhatsApp / Telefone",
+      "location": "São Paulo, Brasil"
     }
   },
   "footer": {
     "copyright": "© 2026 Everton Leão. Todos os direitos reservados.",
     "links": "Links Rápidos",
-    "social": "Siga-me"
+    "social": "Siga-me",
+    "note": "Aberto a oportunidades remotas e internacionais"
   },
   "common": {
     "loading": "Carregando...",
     "error": "Erro",
     "back": "Voltar",
     "close": "Fechar"
+  },
+  "metadata": {
+    "keywords": [
+      ".NET",
+      "C#",
+      "ASP.NET Core",
+      "SQL Server",
+      "Azure",
+      "REST API",
+      "Full-Stack",
+      "DevOps",
+      "CI/CD",
+      "Agile",
+      "Performance Optimization",
+      "Unit Testing"
+    ],
+    "languageDefault": "pt",
+    "resumeFiles": {
+      "pt": "/cv-everton-leao-pt.pdf",
+      "en": "/cv-everton-leao-en.pdf"
+    },
+    "links": {
+      "linkedin": "https://www.linkedin.com/in/everton-leao",
+      "github": "https://github.com/everton-leao"
+    }
   }
 }
