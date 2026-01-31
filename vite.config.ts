@@ -13,7 +13,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // -----------------------------------------------------------------------------
-// Manus Debug Collector
+// Manus Debug Collector (DEV ONLY)
 // -----------------------------------------------------------------------------
 const LOG_DIR = path.join(__dirname, ".manus-logs");
 
@@ -28,7 +28,9 @@ function vitePluginManusDebugCollector(): Plugin {
     name: "manus-debug-collector",
 
     transformIndexHtml(html) {
+      // ⚠️ NÃO injeta em produção (Render)
       if (process.env.NODE_ENV === "production") return html;
+
       return {
         html,
         tags: [
@@ -60,9 +62,16 @@ function vitePluginManusDebugCollector(): Plugin {
   };
 }
 
+// -----------------------------------------------------------------------------
+// Vite Config
+// -----------------------------------------------------------------------------
 export default defineConfig(({ mode }) => ({
-  // ⚠️ BASE só em produção
-  base: mode === "production" ? "/leao_portfolio/" : "/",
+  /**
+   * ⚠️ IMPORTANTE PARA RENDER
+   * Render usa domínio próprio (*.onrender.com)
+   * NÃO use subpath em produção
+   */
+  base: "/",
 
   root: path.resolve(__dirname, "client"),
 
