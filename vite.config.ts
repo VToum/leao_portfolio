@@ -153,6 +153,7 @@ function vitePluginManusDebugCollector(): Plugin {
 const plugins = [react(), tailwindcss(), vitePluginManusRuntime(), vitePluginManusDebugCollector()];
 
 export default defineConfig({
+  base: '/leao_portfolio/',   // 👈 nome exato do repositório
   plugins,
   resolve: {
     alias: {
