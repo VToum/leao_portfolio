@@ -6,8 +6,10 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
+    "build:gh": "vite build --base=/leao_portfolio/",
     "start": "NODE_ENV=production node dist/index.js",
     "preview": "vite preview --host",
+    "deploy": "gh-pages -d dist",
     "check": "tsc --noEmit",
     "format": "prettier --write ."
   },
@@ -83,6 +85,7 @@
     "add": "^2.0.6",
     "autoprefixer": "^10.4.20",
     "esbuild": "^0.25.0",
+    "gh-pages": "^6.3.0",
     "pnpm": "^10.15.1",
     "postcss": "^8.4.47",
     "prettier": "^3.6.2",
@@ -94,7 +97,7 @@
     "vite-plugin-manus-runtime": "^0.0.57",
     "vitest": "^2.1.4"
   },
-  "packageManager": "pnpm@10.4.1+sha512.c753b6c3ad7afa13af388fa6d808035a008e30ea9993f58c6663e2bc5ff21679aa834db094987129aa4d488b86df57f7b634981b2f827cdcacc698cc0cfb88af",
+  "packageManager": "pnpm@10.4.1",
   "pnpm": {
     "patchedDependencies": {
       "wouter@3.7.1": "patches/wouter@3.7.1.patch"
@@ -104,15 +107,12 @@
     }
   },
   "description": "A modern, professional frontend portfolio showcasing Full Stack .NET development skills with international best practices.",
-  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/VToum/leao_portfolio.git"
   },
-  "keywords": [],
-  "author": "",
   "bugs": {
     "url": "https://github.com/VToum/leao_portfolio/issues"
   },
-  "homepage": "https://github.com/VToum/leao_portfolio#readme"
+  "homepage": "https://vtoum.github.io/leao_portfolio/"
 }
