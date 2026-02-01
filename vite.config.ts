@@ -1,21 +1,34 @@
+<<<<<<< HEAD
 import tailwindcss from "@tailwindcss/vite";
+=======
+>>>>>>> 09f93b4d34a40c8ad4f5fa6d2f85ea2cefb3cbaf
 import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
 import fs from "node:fs";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 import { defineConfig, type Plugin, type ViteDevServer } from "vite";
 import { vitePluginManusRuntime } from "vite-plugin-manus-runtime";
 
-// =============================================================================
-// Manus Debug Collector - Vite Plugin
-// Writes browser logs directly to files, trimmed when exceeding size limit
-// =============================================================================
+// -----------------------------------------------------------------------------
+// __dirname fix para ESM
+// -----------------------------------------------------------------------------
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
+<<<<<<< HEAD
 const PROJECT_ROOT = import.meta.dirname;
 const LOG_DIR = path.join(PROJECT_ROOT, ".manus-logs");
 const MAX_LOG_SIZE_BYTES = 1 * 1024 * 1024; // 1MB
 const TRIM_TARGET_BYTES = Math.floor(MAX_LOG_SIZE_BYTES * 0.6);
 
 type LogSource = "browserConsole" | "networkRequests" | "sessionReplay";
+=======
+// -----------------------------------------------------------------------------
+// Manus Debug Collector (DEV ONLY)
+// -----------------------------------------------------------------------------
+const LOG_DIR = path.join(__dirname, ".manus-logs");
+>>>>>>> 09f93b4d34a40c8ad4f5fa6d2f85ea2cefb3cbaf
 
 function ensureLogDir() {
   if (!fs.existsSync(LOG_DIR)) {
@@ -23,6 +36,7 @@ function ensureLogDir() {
   }
 }
 
+<<<<<<< HEAD
 function trimLogFile(logPath: string) {
   try {
     if (!fs.existsSync(logPath)) return;
@@ -62,11 +76,17 @@ function writeToLogFile(source: LogSource, entries: unknown[]) {
   trimLogFile(logPath);
 }
 
+=======
+>>>>>>> 09f93b4d34a40c8ad4f5fa6d2f85ea2cefb3cbaf
 function vitePluginManusDebugCollector(): Plugin {
   return {
     name: "manus-debug-collector",
 
     transformIndexHtml(html) {
+<<<<<<< HEAD
+=======
+      // ⚠️ NÃO injeta em produção (Render)
+>>>>>>> 09f93b4d34a40c8ad4f5fa6d2f85ea2cefb3cbaf
       if (process.env.NODE_ENV === "production") return html;
 
       return {
@@ -74,10 +94,7 @@ function vitePluginManusDebugCollector(): Plugin {
         tags: [
           {
             tag: "script",
-            attrs: {
-              src: "/__manus__/debug-collector.js",
-              defer: true,
-            },
+            attrs: { src: "/__manus__/debug-collector.js", defer: true },
             injectTo: "head",
           },
         ],
@@ -89,6 +106,7 @@ function vitePluginManusDebugCollector(): Plugin {
         if (req.method !== "POST") return next();
 
         let body = "";
+<<<<<<< HEAD
         req.on("data", (chunk) => (body += chunk.toString()));
         req.on("end", () => {
           try {
@@ -107,12 +125,23 @@ function vitePluginManusDebugCollector(): Plugin {
             res.writeHead(400, { "Content-Type": "application/json" });
             res.end(JSON.stringify({ success: false, error: String(e) }));
           }
+=======
+        req.on("data", (chunk) => (body += chunk));
+        req.on("end", () => {
+          ensureLogDir();
+          fs.appendFileSync(
+            path.join(LOG_DIR, "browserConsole.log"),
+            body + "\n"
+          );
+          res.end(JSON.stringify({ success: true }));
+>>>>>>> 09f93b4d34a40c8ad4f5fa6d2f85ea2cefb3cbaf
         });
       });
     },
   };
 }
 
+<<<<<<< HEAD
 const plugins = [
   react(),
   tailwindcss(),
@@ -139,12 +168,46 @@ export default defineConfig(({ command }) => ({
 
   build: {
     outDir: path.resolve(PROJECT_ROOT, "dist/public"),
+=======
+// -----------------------------------------------------------------------------
+// Vite Config
+// -----------------------------------------------------------------------------
+export default defineConfig(({ mode }) => ({
+  /**
+   * ⚠️ IMPORTANTE PARA RENDER
+   * Render usa domínio próprio (*.onrender.com)
+   * NÃO use subpath em produção
+   */
+  base: "/",
+
+  root: path.resolve(__dirname, "client"),
+
+  plugins: [
+    react(),
+    tailwindcss(),
+    vitePluginManusRuntime(),
+    vitePluginManusDebugCollector(),
+  ],
+
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "client/src"),
+      "@shared": path.resolve(__dirname, "shared"),
+    },
+  },
+
+  envDir: __dirname,
+
+  build: {
+    outDir: path.resolve(__dirname, "dist/public"),
+>>>>>>> 09f93b4d34a40c8ad4f5fa6d2f85ea2cefb3cbaf
     emptyOutDir: true,
   },
 
   server: {
     port: 3000,
     host: true,
+<<<<<<< HEAD
     strictPort: false,
     allowedHosts: [
       ".manuspre.computer",
@@ -159,5 +222,7 @@ export default defineConfig(({ command }) => ({
       strict: true,
       deny: ["**/.*"],
     },
+=======
+>>>>>>> 09f93b4d34a40c8ad4f5fa6d2f85ea2cefb3cbaf
   },
 }));
