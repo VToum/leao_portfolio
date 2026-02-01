@@ -121,24 +121,28 @@ const plugins = [
 ];
 
 export default defineConfig(({ command }) => ({
-  base: command === "build" ? "/leao_portfolio/" : "/",
+  // Serve from root by default to avoid 404 on Render.
+  // If you need a sub-path (e.g. '/leao_portfolio/'), change this value accordingly.
+  base: "/",
 
   plugins,
 
+  // Project's client folder (adjust only if your frontend isn't in `client/`)
   root: path.resolve(PROJECT_ROOT, "client"),
 
+  // Read env files from project root
   envDir: PROJECT_ROOT,
 
   resolve: {
     alias: {
       "@": path.resolve(PROJECT_ROOT, "client/src"),
       "@shared": path.resolve(PROJECT_ROOT, "shared"),
-      "@assets": path.resolve(PROJECT_ROOT, "attached_assets"),
     },
   },
 
   build: {
-    outDir: path.resolve(PROJECT_ROOT, "dist/public"),
+    // Render expects the publish directory to be `dist` by convention.
+    outDir: path.resolve(PROJECT_ROOT, "dist"),
     emptyOutDir: true,
   },
 
