@@ -18,14 +18,14 @@
     "intro": "I am Everton Leão, a results-driven .NET Full-Stack Developer with 4+ years of professional experience designing, developing, and maintaining web applications. I deliver scalable backend services, polished frontends, and reliable CI/CD pipelines while collaborating in Agile teams and following international best practices.",
     "expertise": "Expertise",
     "skills": [
-      "C# & ASP.NET Core",
-      "RESTful API Design & Integration",
-      "SQL Server, T-SQL & Database Design",
-      "Frontend: HTML5, CSS3, JavaScript, Bootstrap",
-      "Azure DevOps, CI/CD & Cloud Services (Azure)",
-      "Git, branching strategies & code review",
-      "Unit Testing, Integration Testing",
-      "Agile Methodologies (Scrum, Kanban)"
+      "C# & .NET (AI Engine, REST APIs, Backend Architecture)",
+      "React & JavaScript (Premium UI, Explainable AI Interfaces)",
+      "AI & MAS (Semantic Kernel, Prompt Engineering, XAI)",
+      "Software Architecture (Solution Design, System Orchestration)",
+      "SQL Server, Database Design & Data Processing",
+      "Cloud & DevOps (Azure DevOps, CI/CD, YAML Config)",
+      "Product Engineering (QA, Technical Docs, Zero-Hallucination)",
+      "Domain Knowledge (Financial Data, Debt/Investment Strategies)"
     ],
     "certifications": [
       ".NET Certification"
@@ -50,18 +50,21 @@
     "technologies": "Technologies",
     "items": [
       {
-        "title": "Management System - AVIPAM",
-        "role": "Full-Stack .NET Developer",
-        "description": "Maintained and implemented new features for a production web system; optimized SQL queries and improved page load times; supported deployments and monitoring.",
-        "impact": "Reduced average response time and lowered incident rate (insert metrics)",
-        "technologies": "C#, ASP.NET Core, SQL Server, Azure DevOps"
-      },
-      {
-        "title": "Database Support & Optimization - SMIT",
-        "role": "Developer",
-        "description": "Designed and maintained database schemas, optimized complex queries, and supported backend integrations.",
-        "impact": "Improved query performance for critical reports (insert metrics)",
-        "technologies": "SQL Server, T-SQL, Git"
+        "id": "moneybrainai",
+        "title": "MoneyBrainAI (AI Financial Orchestration)",
+        "role": "CPO & Tech Lead",
+        "description": "Multi-agent system orchestrator combining tech and financial agents via Semantic Kernel. Manages cash flow, debt strategies, and investments with 'Zero-Hallucination' policies and explainable reports.",
+        "impact": "Full agent lifecycle orchestration and automated financial diagnostics.",
+        "technologies": [
+          "C#",
+          ".NET",
+          "React",
+          "Semantic Kernel",
+          "MAS",
+          "Prompt Engineering"
+        ],
+        "image": "/images/moneybrainai.jpg",
+        "liveUrl": "https://moneybrain-frontend.onrender.com/#"
       }
     ]
   },

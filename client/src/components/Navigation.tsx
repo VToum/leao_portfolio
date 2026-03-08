@@ -13,7 +13,6 @@ export const Navigation: React.FC = () => {
     { label: t('nav.home'), href: '#home' },
     { label: t('nav.about'), href: '#about' },
     { label: t('nav.projects'), href: '#projects' },
-    { label: t('nav.blog'), href: '#blog' },
     { label: t('nav.contact'), href: '#contact' },
   ];
 
@@ -26,8 +25,9 @@ export const Navigation: React.FC = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <a href="#home" className="text-2xl font-bold text-primary">
-            EL
+          <a href="#home" className="flex items-center gap-2 text-2xl font-bold text-primary">
+            <img src="/images/EvertonLeao.png" alt="Everton Leão" className="h-8 w-8 rounded-full object-cover" />
+            <span>Everton Leão</span>
           </a>
 
           {/* Desktop Navigation */}
@@ -49,22 +49,20 @@ export const Navigation: React.FC = () => {
             <div className="flex items-center gap-2 bg-secondary rounded-lg p-1">
               <button
                 onClick={() => handleLanguageChange('en')}
-                className={`px-3 py-1 rounded transition-colors ${
-                  currentLanguage === 'en'
-                    ? 'bg-primary text-primary-foreground'
-                    : 'text-foreground hover:bg-muted'
-                }`}
+                className={`px-3 py-1 rounded transition-colors ${currentLanguage === 'en'
+                  ? 'bg-primary text-primary-foreground'
+                  : 'text-foreground hover:bg-muted'
+                  }`}
                 title="English"
               >
                 EN
               </button>
               <button
                 onClick={() => handleLanguageChange('pt')}
-                className={`px-3 py-1 rounded transition-colors ${
-                  currentLanguage === 'pt'
-                    ? 'bg-primary text-primary-foreground'
-                    : 'text-foreground hover:bg-muted'
-                }`}
+                className={`px-3 py-1 rounded transition-colors ${currentLanguage === 'pt'
+                  ? 'bg-primary text-primary-foreground'
+                  : 'text-foreground hover:bg-muted'
+                  }`}
                 title="Português"
               >
                 PT

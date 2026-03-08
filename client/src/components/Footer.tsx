@@ -11,7 +11,10 @@ export const Footer: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           {/* Brand */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-foreground">Everton Leão</h3>
+            <div className="flex items-center gap-2">
+              <img src="/images/EvertonLeao.png" alt="Everton Leão" className="h-8 w-8 rounded-full object-cover" />
+              <h3 className="text-lg font-semibold text-foreground">Everton Leão</h3>
+            </div>
             <p className="text-sm text-muted-foreground">
               Full Stack .NET Developer | Building scalable web applications
             </p>
@@ -43,14 +46,6 @@ export const Footer: React.FC = () => {
                   className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   {t('nav.projects')}
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#blog"
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
-                  {t('nav.blog')}
                 </a>
               </li>
             </ul>
