@@ -66,7 +66,7 @@
       {
         "id": "moneyia",
         "title": "MoneyIA",
-        "description": "App de finanças pessoais com IA, 100% em português. Identidade visual em azul marinho profundo (#0B1520) e verde esmeralda (#00E676). Ícone 'Split M'.",
+        "description": "Aplicativo inteligente de gestão de finanças pessoais com assistência de inteligência artificial, categorização automática e insights financeiros em tempo real.",
         "technologies": [
           "React Native",
           "Expo",
