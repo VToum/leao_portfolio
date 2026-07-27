@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "build:gh": "vite build --base=/leao_portfolio/",
+    "build:gh": "vite build --base=/leao_portfolio/ && node -e \"require('fs').copyFileSync('dist/index.html', 'dist/404.html')\"",
     "predeploy": "pnpm run build:gh",
     "deploy": "gh-pages -d dist"
   },
