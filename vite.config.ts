@@ -123,7 +123,7 @@ const plugins = [
 export default defineConfig(({ command }) => ({
   // Serve from root by default to avoid 404 on Render.
   // If you need a sub-path (e.g. '/leao_portfolio/'), change this value accordingly.
-  base: "/",
+  base: process.env.NODE_ENV === "production" ? "/leao_portfolio/" : "/",
 
   plugins,
 
