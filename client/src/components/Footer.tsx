@@ -56,7 +56,7 @@ export const Footer: React.FC = () => {
             <h4 className="font-semibold text-foreground">{t('footer.social')}</h4>
             <div className="flex gap-4">
               <a
-                href="https://github.com"
+                href="https://github.com/everton-leao"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -65,7 +65,7 @@ export const Footer: React.FC = () => {
                 GitHub
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/evertonleao"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"

@@ -15,16 +15,16 @@
   },
   "about": {
     "title": "Sobre Mim",
-    "intro": "Sou Everton Leão, Desenvolvedor Full Stack .NET com 4+ anos de experiência profissional em design, desenvolvimento e manutenção de aplicações web. Entrego soluções escaláveis, otimizo performance de bancos de dados e atuo em times ágeis com foco em entrega contínua.",
+    "intro": "Sou Everton Leão, Desenvolvedor Full Stack .NET com experiência no desenvolvimento, suporte e manutenção de aplicações web e móbiles. Foco na criação de soluções eficientes, integração de APIs e otimização de sistemas.",
     "expertise": "Especialidades",
     "skills": [
       "C# & .NET (Engine IA, APIs REST, Backend Architecture)",
-      "React & JavaScript (UI Premium, Interfaces de IA Explicável)",
-      "IA & MAS (Semantic Kernel, Engenharia de Prompts, XAI)",
-      "Arquitetura de Software (Solution Design, System Orchestration)",
+      "React & JavaScript (Interfaces Responsivas e Web Apps)",
+      "IA & MAS (Semantic Kernel, Engenharia de Prompts)",
+      "Arquitetura de Software (Arquitetura de Soluções, Orquestração)",
       "SQL Server, Modelagem de Dados e Processamento",
       "Cloud & DevOps (Azure DevOps, CI/CD, YAML Config)",
-      "Engenharia de Produto (QA, Docs Técnicos, Zero-Alucinação)",
+      "Engenharia de Produto (QA, Docs Técnicos)",
       "Conhecimento de Domínio (Finanças, Fluxo de Caixa, Dívidas)"
     ],
     "certifications": [
@@ -50,21 +50,91 @@
     "technologies": "Tecnologias",
     "items": [
       {
-        "id": "moneybrainai",
-        "title": "MoneyBrainAI (Orquestração Financeira com IA)",
-        "role": "CPO & Tech Lead",
-        "description": "Sistema multi-agente que combina agentes de desenvolvimento e financeiros via Semantic Kernel. Orquestra fluxos de caixa, dívidas e investimentos com governança de 'Zero Alucinação' e relatórios explicáveis.",
-        "impact": "Orquestração completa de ciclo de vida de agentes e diagnósticos financeiros automatizados.",
+        "id": "moneyia",
+        "title": "MoneyIA",
+        "description": "App de finanças pessoais com IA, 100% em português. Identidade visual em azul marinho profundo (#0B1520) e verde esmeralda (#00E676). Ícone 'Split M'.",
         "technologies": [
+          "React Native",
+          "Expo",
           "C#",
           ".NET",
-          "React",
-          "Semantic Kernel",
-          "MAS",
-          "Prompt Engineering"
+          "IA & MAS",
+          "Semantic Kernel"
         ],
-        "image": "/images/moneybrainai.jpg",
-        "liveUrl": "https://moneybrain-frontend.onrender.com/#"
+        "image": "/images/moneyia_cover.png",
+        "buttons": [
+          {
+            "label": "Baixar na Play Store",
+            "url": "https://play.google.com/store/apps/details?id=com.moneybrainai.app",
+            "type": "playstore"
+          },
+          {
+            "label": "Acessar o site",
+            "url": "https://moneybrainia.com.br/",
+            "type": "website"
+          }
+        ]
+      },
+      {
+        "id": "tordin-english",
+        "title": "Aprender Inglês Jogando Tycoon (Parque Tycoon)",
+        "description": "App de inglês gamificado com mecânica idle tycoon: lições, histórias, jogos e flashcards offline.",
+        "technologies": [
+          "React Native",
+          "Expo",
+          "TypeScript",
+          "Gamificação",
+          "Idle Tycoon Engine",
+          "SQLite Offline"
+        ],
+        "image": "/images/tycoon_english_cover.png",
+        "buttons": [
+          {
+            "label": "Baixar na Play Store",
+            "url": "https://play.google.com/store/apps/details?id=com.tordin.english",
+            "type": "playstore"
+          }
+        ]
+      },
+      {
+        "id": "cofre-forte",
+        "title": "Cofre Forte: Senhas Offline",
+        "description": "App de gerenciamento de senhas 100% offline, sem nuvem.",
+        "technologies": [
+          "React Native",
+          "Expo",
+          "AES-256",
+          "SQLite Offline",
+          "Segurança"
+        ],
+        "image": "/images/cofre_forte_cover.png",
+        "buttons": [
+          {
+            "label": "Baixar na Play Store",
+            "url": "https://play.google.com/store/apps/details?id=com.cofreforte.senhas.pix",
+            "type": "playstore"
+          }
+        ]
+      },
+      {
+        "id": "rescisao-clt",
+        "title": "Cálculo Rescisão CLT e FGTS",
+        "description": "Calculadora precisa de direitos trabalhistas: rescisão, aviso prévio, férias, décimo terceiro e FGTS.",
+        "technologies": [
+          "React Native",
+          "Expo",
+          "TypeScript",
+          "Cálculos CLT",
+          "Offline First"
+        ],
+        "image": "/images/rescisao_clt_cover.png",
+        "buttons": [
+          {
+            "label": "Baixar na Play Store",
+            "url": "https://play.google.com/store/apps/details?id=com.everleao.rescisao.clt",
+            "type": "playstore"
+          }
+        ]
       }
     ]
   },

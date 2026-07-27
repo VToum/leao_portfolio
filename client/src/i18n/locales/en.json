@@ -15,16 +15,16 @@
   },
   "about": {
     "title": "About Me",
-    "intro": "I am Everton Leão, a results-driven .NET Full-Stack Developer with 4+ years of professional experience designing, developing, and maintaining web applications. I deliver scalable backend services, polished frontends, and reliable CI/CD pipelines while collaborating in Agile teams and following international best practices.",
+    "intro": "I am Everton Leão, a .NET Full-Stack Developer with experience developing, supporting, and maintaining web and mobile applications. Focused on building efficient solutions, API integrations, and system optimization.",
     "expertise": "Expertise",
     "skills": [
       "C# & .NET (AI Engine, REST APIs, Backend Architecture)",
-      "React & JavaScript (Premium UI, Explainable AI Interfaces)",
-      "AI & MAS (Semantic Kernel, Prompt Engineering, XAI)",
-      "Software Architecture (Solution Design, System Orchestration)",
+      "React & JavaScript (Responsive UIs & Web Apps)",
+      "AI & MAS (Semantic Kernel, Prompt Engineering)",
+      "Software Architecture (Solution Architecture, System Orchestration)",
       "SQL Server, Database Design & Data Processing",
       "Cloud & DevOps (Azure DevOps, CI/CD, YAML Config)",
-      "Product Engineering (QA, Technical Docs, Zero-Hallucination)",
+      "Product Engineering (QA, Technical Docs)",
       "Domain Knowledge (Financial Data, Debt/Investment Strategies)"
     ],
     "certifications": [
@@ -50,21 +50,91 @@
     "technologies": "Technologies",
     "items": [
       {
-        "id": "moneybrainai",
-        "title": "MoneyBrainAI (AI Financial Orchestration)",
-        "role": "CPO & Tech Lead",
-        "description": "Multi-agent system orchestrator combining tech and financial agents via Semantic Kernel. Manages cash flow, debt strategies, and investments with 'Zero-Hallucination' policies and explainable reports.",
-        "impact": "Full agent lifecycle orchestration and automated financial diagnostics.",
+        "id": "moneyia",
+        "title": "MoneyIA",
+        "description": "AI personal finance app, 100% in Portuguese. Visual identity in deep navy (#0B1520) and emerald green (#00E676). 'Split M' icon.",
         "technologies": [
+          "React Native",
+          "Expo",
           "C#",
           ".NET",
-          "React",
-          "Semantic Kernel",
-          "MAS",
-          "Prompt Engineering"
+          "AI & MAS",
+          "Semantic Kernel"
         ],
-        "image": "/images/moneybrainai.jpg",
-        "liveUrl": "https://moneybrain-frontend.onrender.com/#"
+        "image": "/images/moneyia_cover.png",
+        "buttons": [
+          {
+            "label": "Download on Play Store",
+            "url": "https://play.google.com/store/apps/details?id=com.moneybrainai.app",
+            "type": "playstore"
+          },
+          {
+            "label": "Visit Website",
+            "url": "https://moneybrainia.com.br/",
+            "type": "website"
+          }
+        ]
+      },
+      {
+        "id": "tordin-english",
+        "title": "Learn English Playing Tycoon (Park Tycoon)",
+        "description": "Gamified English learning app with idle tycoon mechanics: lessons, stories, games, and offline flashcards.",
+        "technologies": [
+          "React Native",
+          "Expo",
+          "TypeScript",
+          "Gamification",
+          "Idle Tycoon Engine",
+          "SQLite Offline"
+        ],
+        "image": "/images/tycoon_english_cover.png",
+        "buttons": [
+          {
+            "label": "Download on Play Store",
+            "url": "https://play.google.com/store/apps/details?id=com.tordin.english",
+            "type": "playstore"
+          }
+        ]
+      },
+      {
+        "id": "cofre-forte",
+        "title": "Cofre Forte: Offline Passwords",
+        "description": "100% offline password management app without cloud storage.",
+        "technologies": [
+          "React Native",
+          "Expo",
+          "AES-256",
+          "SQLite Offline",
+          "Security"
+        ],
+        "image": "/images/cofre_forte_cover.png",
+        "buttons": [
+          {
+            "label": "Download on Play Store",
+            "url": "https://play.google.com/store/apps/details?id=com.cofreforte.senhas.pix",
+            "type": "playstore"
+          }
+        ]
+      },
+      {
+        "id": "rescisao-clt",
+        "title": "CLT Rescission & FGTS Calculator",
+        "description": "Precise labor rights calculator: severance pay, notice period, vacation, 13th salary, and FGTS.",
+        "technologies": [
+          "React Native",
+          "Expo",
+          "TypeScript",
+          "Labor Math",
+          "Offline First"
+        ],
+        "image": "/images/rescisao_clt_cover.png",
+        "buttons": [
+          {
+            "label": "Download on Play Store",
+            "url": "https://play.google.com/store/apps/details?id=com.everleao.rescisao.clt",
+            "type": "playstore"
+          }
+        ]
       }
     ]
   },
