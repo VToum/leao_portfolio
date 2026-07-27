@@ -3,6 +3,8 @@ import { useTranslation } from '@/hooks/useTranslation';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, Smartphone, Code2, ShieldCheck, Sparkles } from 'lucide-react';
 
+import { getAssetPath } from '@/utils/assets';
+
 export const HeroSection: React.FC = () => {
   const { t } = useTranslation();
 
@@ -20,7 +22,7 @@ export const HeroSection: React.FC = () => {
       <div
         className="absolute inset-0 z-0 opacity-25"
         style={{
-          backgroundImage: 'url(/images/hero-background.png)',
+          backgroundImage: `url(${getAssetPath('/images/hero-background.png')})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

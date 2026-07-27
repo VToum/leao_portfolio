@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from '@/hooks/useTranslation';
 import { Button } from '@/components/ui/button';
 import { ExternalLink, Globe, Smartphone } from 'lucide-react';
+import { getAssetPath } from '@/utils/assets';
 
 interface ProjectButton {
   label: string;
@@ -60,7 +61,7 @@ export const ProjectsSection: React.FC = () => {
                 {/* Image */}
                 <div className="relative h-56 overflow-hidden bg-secondary">
                   <img
-                    src={project.image}
+                    src={getAssetPath(project.image)}
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />

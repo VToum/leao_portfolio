@@ -3,6 +3,7 @@ import { useTranslation } from '@/hooks/useTranslation';
 import { useTheme } from '@/contexts/ThemeContext';
 import { Menu, X, Moon, Sun } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { getAssetPath } from '@/utils/assets';
 
 export const Navigation: React.FC = () => {
   const { t, currentLanguage, toggleLanguage } = useTranslation();
@@ -26,7 +27,7 @@ export const Navigation: React.FC = () => {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <a href="#home" className="flex items-center gap-2 text-2xl font-bold text-primary">
-            <img src="/images/EvertonLeao.png" alt="Everton Leão" className="h-8 w-8 rounded-full object-cover" />
+            <img src={getAssetPath('/images/EvertonLeao.png')} alt="Everton Leão" className="h-8 w-8 rounded-full object-cover" />
             <span>Everton Leão</span>
           </a>
 

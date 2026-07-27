@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useTranslation } from '@/hooks/useTranslation';
 import { Button } from '@/components/ui/button';
 import { Download, ChevronDown, ChevronUp, CheckCircle2 } from 'lucide-react';
+import { getAssetPath } from '@/utils/assets';
 
 export const AboutSection: React.FC = () => {
   const { t, i18n } = useTranslation();
@@ -25,7 +26,7 @@ export const AboutSection: React.FC = () => {
     ? 'Everton_Leao_Full_Stack_DotNet_EN.pdf'
     : 'Everton_Leao_Desenvolvedor_FullStack_PT.pdf';
 
-  const resumeUrl = `/${resumeFileName}`;
+  const resumeUrl = getAssetPath(resumeFileName);
 
   const toggleExpand = (id?: string) => {
     if (!id) return;
@@ -42,7 +43,7 @@ export const AboutSection: React.FC = () => {
             <div className="relative w-64 h-64 md:w-80 md:h-96">
               <div className="absolute inset-0 bg-gradient-to-br from-primary to-primary/50 rounded-2xl rotate-3" />
               <img
-                src="/images/profile.jpg"
+                src={getAssetPath('/images/profile.jpg')}
                 alt="Everton Leão"
                 className="relative w-full h-full object-cover rounded-2xl shadow-2xl"
                 style={{ objectPosition: '80% center' }}
