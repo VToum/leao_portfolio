@@ -8,40 +8,54 @@
     "language": "Language"
   },
   "hero": {
-    "title": ".NET Full-Stack Developer",
-    "subtitle": "Building modern, scalable web applications with clean code, cloud-ready architecture, and international best practices",
-    "cta": "View My Work",
+    "title": ".NET Full-Stack & Mobile Developer",
+    "subtitle": "Building scalable, reliable web and mobile applications focused on quality, performance, and best practices",
+    "badge": "Full Stack & Android Mobile Apps",
+    "cta": "View My Projects",
     "scroll": "Scroll to explore"
   },
   "about": {
     "title": "About Me",
-    "intro": "I am Everton Leão, a .NET Full-Stack Developer with experience developing, supporting, and maintaining web and mobile applications. Focused on building efficient solutions, API integrations, and system optimization.",
-    "expertise": "Expertise",
+    "intro": "I am Everton Leão, a .NET Full-Stack Developer with experience in corporate IT systems management at AVIPAM and independent mobile & web application development. Skilled in building applications from scratch, API integrations, offline-first solutions, and Google Play Store publishing.",
+    "expertise": "Technical Expertise",
     "skills": [
-      "C# & .NET (AI Engine, REST APIs, Backend Architecture)",
-      "React & JavaScript (Responsive UIs & Web Apps)",
-      "AI & MAS (Semantic Kernel, Prompt Engineering)",
-      "Software Architecture (Solution Architecture, System Orchestration)",
-      "SQL Server, Database Design & Data Processing",
-      "Cloud & DevOps (Azure DevOps, CI/CD, YAML Config)",
-      "Product Engineering (QA, Technical Docs)",
-      "Domain Knowledge (Financial Data, Debt/Investment Strategies)"
+      "C# & .NET (REST APIs & AI Engine)",
+      "React Native & Expo (Mobile Development)",
+      "React & TypeScript (Web Applications)",
+      "AI & Agents (Semantic Kernel & Prompting)",
+      "Databases & Offline (SQL Server & SQLite)",
+      "Mobile Publishing & ASO (Google Play Store)",
+      "IT Systems Management (AVIPAM Environment)",
+      "Local Security & Encryption (AES-256)"
     ],
-    "certifications": [
-      ".NET Certification"
+    "experienceTitle": "Professional Experience & Publishing",
+    "experiences": [
+      {
+        "id": "avipam",
+        "company": "AVIPAM Travel & Tourism",
+        "role": "IT Systems Management",
+        "description": "Corporate IT systems management and technology project supervision.",
+        "highlights": [
+          "API Integration & Management",
+          "Development of new web portals",
+          "Systems maintenance and sustainability",
+          "Client API integrations for new partners"
+        ]
+      },
+      {
+        "id": "independent",
+        "company": "Independent Development (Play Store)",
+        "role": "Mobile Developer / Product Creator",
+        "description": "Creation, ASO optimization, and publishing of 4 active apps on Google Play Store.",
+        "highlights": [
+          "Mobile Development with React Native & Expo",
+          "Publishing, ASO, and Management on Google Play Console",
+          "Offline-First Architectures & Secure Local Storage (AES-256)",
+          "Artificial Intelligence Integration in Apps (MoneyIA)"
+        ]
+      }
     ],
-    "achievements": [
-      "Delivered production features and bug fixes across multiple web systems (add metrics)",
-      "Improved database performance and query efficiency (add metrics)",
-      "Collaborated with cross-functional teams to accelerate delivery and reduce incidents"
-    ],
-    "preferredRoles": [
-      "Full-Stack .NET Developer",
-      "Backend Developer (.NET)",
-      "Cloud Developer (Azure)"
-    ],
-    "availability": "Open to remote, hybrid, and international opportunities",
-    "cta": "Download Resume"
+    "cta": "Download Resume PDF"
   },
   "projects": {
     "title": "Featured Projects",

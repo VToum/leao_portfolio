@@ -12,7 +12,6 @@ export const Footer: React.FC = () => {
           {/* Brand */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <img src="/images/EvertonLeao.png" alt="Everton Leão" className="h-8 w-8 rounded-full object-cover" />
               <h3 className="text-lg font-semibold text-foreground">Everton Leão</h3>
             </div>
             <p className="text-sm text-muted-foreground">

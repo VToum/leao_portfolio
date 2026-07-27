@@ -8,40 +8,54 @@
     "language": "Idioma"
   },
   "hero": {
-    "title": "Desenvolvedor Full Stack .NET",
-    "subtitle": "Construindo aplicações web escaláveis e confiáveis com foco em qualidade, performance e práticas internacionais",
-    "cta": "Ver Meu Trabalho",
+    "title": "Desenvolvedor Full Stack .NET & Mobile",
+    "subtitle": "Construindo aplicações web e mobile escaláveis e confiáveis com foco em qualidade, performance e práticas internacionais",
+    "badge": "Full Stack & Apps Mobile Android",
+    "cta": "Ver Meus Projetos",
     "scroll": "Role para explorar"
   },
   "about": {
     "title": "Sobre Mim",
-    "intro": "Sou Everton Leão, Desenvolvedor Full Stack .NET com experiência no desenvolvimento, suporte e manutenção de aplicações web e móbiles. Foco na criação de soluções eficientes, integração de APIs e otimização de sistemas.",
-    "expertise": "Especialidades",
+    "intro": "Sou Everton Leão, Desenvolvedor Full Stack .NET com atuação em gestão de sistemas de TI corporativos na AVIPAM e desenvolvimento independente de aplicações móveis e web. Experiência na construção de produtos do zero, integração de APIs, soluções offline-first e publicação na Google Play Store.",
+    "expertise": "Especialidades Técnicas",
     "skills": [
-      "C# & .NET (Engine IA, APIs REST, Backend Architecture)",
-      "React & JavaScript (Interfaces Responsivas e Web Apps)",
-      "IA & MAS (Semantic Kernel, Engenharia de Prompts)",
-      "Arquitetura de Software (Arquitetura de Soluções, Orquestração)",
-      "SQL Server, Modelagem de Dados e Processamento",
-      "Cloud & DevOps (Azure DevOps, CI/CD, YAML Config)",
-      "Engenharia de Produto (QA, Docs Técnicos)",
-      "Conhecimento de Domínio (Finanças, Fluxo de Caixa, Dívidas)"
+      "C# & .NET (APIs REST & Engine IA)",
+      "React Native & Expo (Desenvolvimento Mobile)",
+      "React & TypeScript (Aplicações Web)",
+      "IA & Agentes (Semantic Kernel & Prompting)",
+      "Bancos de Dados & Offline (SQL Server & SQLite)",
+      "Publicação Mobile & ASO (Google Play Store)",
+      "Gestão de Sistemas de TI (Ambiente AVIPAM)",
+      "Segurança Local & Criptografia (AES-256)"
     ],
-    "certifications": [
-      ".NET Certification"
+    "experienceTitle": "Experiência Profissional & Publicações",
+    "experiences": [
+      {
+        "id": "avipam",
+        "company": "AVIPAM Viagem e Turismo",
+        "role": "Gestão de Sistemas de TI",
+        "description": "Atuação em gestão de sistemas corporativos de TI e acompanhamento de projetos de tecnologia.",
+        "highlights": [
+          "Integração com APIs",
+          "Desenvolvimento de novos portais",
+          "Manutenção e sustentabilidade de sistemas",
+          "Integração de APIs com novos clientes"
+        ]
+      },
+      {
+        "id": "independent",
+        "company": "Desenvolvimento Independente (Play Store)",
+        "role": "Desenvolvedor Mobile / Criador de Produtos",
+        "description": "Criação, otimização (ASO) e publicação de 4 aplicativos ativos na Google Play Store.",
+        "highlights": [
+          "Desenvolvimento Mobile em React Native & Expo",
+          "Publicação, ASO e Gestão na Google Play Console",
+          "Arquiteturas Offline-First & Armazenamento Seguro (AES-256)",
+          "Integração de Inteligência Artificial em Apps (MoneyIA)"
+        ]
+      }
     ],
-    "achievements": [
-      "Entrega contínua de funcionalidades críticas em produção (ex.: X features em Y meses)",
-      "Melhoria de performance de consultas SQL reduzindo tempo médio em X%",
-      "Participação em migração/integração com serviços em nuvem (Azure) para aumentar disponibilidade"
-    ],
-    "preferredRoles": [
-      "Full-Stack .NET Developer",
-      "Backend Developer (.NET)",
-      "Cloud Developer (Azure)"
-    ],
-    "availability": "Aberto a oportunidades remotas, híbridas e internacionais",
-    "cta": "Baixar Currículo"
+    "cta": "Baixar Currículo em PDF"
   },
   "projects": {
     "title": "Projetos em Destaque",
