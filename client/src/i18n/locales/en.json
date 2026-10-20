@@ -181,7 +181,7 @@
   },
   "contact": {
     "title": "Get in Touch",
-    "subtitle": "Let’s discuss how we can work together. I reply quickly via WhatsApp.",
+    "subtitle": "For career opportunities and project discussions, connect with me on LinkedIn.",
     "form": {
       "name": "Full Name",
       "email": "Best Email (Optional)",
@@ -195,7 +195,8 @@
       "email": "Email",
       "phone": "WhatsApp / Phone",
       "location": "São Paulo, Brazil"
-    }
+    },
+    "note": "I use LinkedIn and GitHub for professional conversations and project details."
   },
   "footer": {
     "copyright": "© 2026 Everton Leão. All rights reserved.",
