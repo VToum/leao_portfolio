@@ -8,54 +8,62 @@
     "language": "Idioma"
   },
   "hero": {
-    "title": "Desenvolvedor Full Stack .NET & Mobile",
-    "subtitle": "Construindo aplicações web e mobile escaláveis e confiáveis com foco em qualidade, performance e práticas internacionais",
-    "badge": "Full Stack & Apps Mobile Android",
+    "title": "Desenvolvedor Full Stack .NET",
+    "subtitle": "Desenvolvo e evoluo sistemas corporativos, integro APIs e publico aplicativos Android. Na ForjaX Mobile, mantenho produtos em produção e utilizados por pessoas.",
+    "badge": "C# · .NET · APIs REST · Android em produção",
     "cta": "Ver Meus Projetos",
-    "scroll": "Role para explorar"
+    "scroll": "Role para explorar",
+    "highlights": {
+      "apps": "Apps Android em produção",
+      "stack": "C# · .NET · APIs REST",
+      "products": "Produtos próprios na ForjaX Mobile"
+    }
   },
   "about": {
     "title": "Sobre Mim",
-    "intro": "Sou Everton Leão, Desenvolvedor Full Stack .NET com atuação em gestão de sistemas de TI corporativos na AVIPAM e desenvolvimento independente de aplicações móveis e web. Experiência na construção de produtos do zero, integração de APIs, soluções offline-first e publicação na Google Play Store.",
-    "expertise": "Especialidades Técnicas",
+    "intro": "Atuo como Desenvolvedor Full Stack .NET na AVIPAM, contribuindo para sistemas corporativos, portais web e integrações com APIs. Nesse contexto, trabalho com C#, .NET, ASP.NET Web Forms, SQL Server e Bootstrap, além de Azure DevOps e AWS em fluxos de entrega e operação.\n\nTambém criei a ForjaX Mobile, uma iniciativa independente na qual desenvolvo, publico e mantenho aplicativos Android utilizados por pessoas. Nos projetos independentes posso trabalhar com tecnologias além da stack corporativa, como React Native, Expo e TypeScript; armazenamento local e monitoramento variam conforme o produto.\n\nGosto de acompanhar um produto desde um problema real até a implementação, publicação e melhoria contínua.",
+    "expertise": "Tecnologias por contexto",
     "skills": [
-      "C# & .NET (APIs REST & Engine IA)",
-      "React Native & Expo (Desenvolvimento Mobile)",
-      "React & TypeScript (Aplicações Web)",
-      "IA & Agentes (Semantic Kernel & Prompting)",
-      "Bancos de Dados & Offline (SQL Server & SQLite)",
-      "Publicação Mobile & ASO (Google Play Store)",
-      "Gestão de Sistemas de TI (Ambiente AVIPAM)",
-      "Segurança Local & Criptografia (AES-256)"
+      "C# · .NET · ASP.NET Core · APIs REST",
+      "ASP.NET Web Forms · Bootstrap · AVIPAM",
+      "SQL Server · Azure DevOps · AWS · AVIPAM",
+      "React Native · Expo · TypeScript · aplicativos Android",
+      "React · TypeScript · aplicações web",
+      "SQLite · armazenamento local e offline em apps compatíveis",
+      "Google Play Console · Firebase Crashlytics",
+      "IA aplicada a produtos digitais · MoneyIA"
     ],
-    "experienceTitle": "Experiência Profissional & Publicações",
+    "experienceTitle": "Experiência profissional e produtos",
     "experiences": [
       {
         "id": "avipam",
-        "company": "AVIPAM Viagem e Turismo",
-        "role": "Gestão de Sistemas de TI",
-        "description": "Atuação em gestão de sistemas corporativos de TI e acompanhamento de projetos de tecnologia.",
+        "company": "AVIPAM Viagens & Turismo",
+        "role": "Desenvolvedor Full Stack .NET",
+        "description": "Desenvolvimento e evolução de aplicações e portais corporativos, incluindo integrações com APIs.",
         "highlights": [
-          "Integração com APIs",
-          "Desenvolvimento de novos portais",
-          "Manutenção e sustentabilidade de sistemas",
-          "Integração de APIs com novos clientes"
+          "Desenvolvimento e manutenção de aplicações web corporativas",
+          "Integração de APIs REST com sistemas e plataformas de clientes",
+          "C#, .NET, ASP.NET Web Forms e SQL Server",
+          "Bootstrap para interfaces web",
+          "Azure DevOps e AWS em fluxos de entrega e operação"
         ]
       },
       {
-        "id": "independent",
-        "company": "Desenvolvimento Independente (Play Store)",
-        "role": "Desenvolvedor Mobile / Criador de Produtos",
-        "description": "Criação, otimização (ASO) e publicação de 4 aplicativos ativos na Google Play Store.",
+        "id": "forjax",
+        "company": "ForjaX Mobile",
+        "role": "Criador e Desenvolvedor Mobile",
+        "description": "Desenvolvimento independente de produtos Android publicados na Google Play e utilizados em produção.",
         "highlights": [
-          "Desenvolvimento Mobile em React Native & Expo",
-          "Publicação, ASO e Gestão na Google Play Console",
-          "Arquiteturas Offline-First & Armazenamento Seguro (AES-256)",
-          "Integração de Inteligência Artificial em Apps (MoneyIA)"
+          "React Native, Expo e TypeScript em projetos mobile",
+          "Publicação e gestão de versões pela Google Play Console",
+          "Recursos locais e offline-first quando adequados ao produto",
+          "Firebase Crashlytics nos projetos que utilizam o serviço",
+          "Desenvolvimento do produto até a publicação e manutenção"
         ]
       }
     ],
-    "cta": "Baixar Currículo em PDF"
+    "cta": "Baixar Currículo em PDF",
+    "activitiesLabel": "Atuação e entregas"
   },
   "projects": {
     "title": "Projetos em Destaque",
@@ -66,7 +74,7 @@
       {
         "id": "moneyia",
         "title": "MoneyIA",
-        "description": "Aplicativo inteligente de gestão de finanças pessoais com assistência de inteligência artificial, categorização automática e insights financeiros em tempo real.",
+        "description": "Produto de finanças pessoais com recursos de IA, publicado para Android e utilizado por pessoas. O projeto também inclui o site e o blog do produto.",
         "technologies": [
           "React Native",
           "Expo",
@@ -85,6 +93,11 @@
           {
             "label": "Acessar o site",
             "url": "https://moneybrainia.com.br/",
+            "type": "website"
+          },
+          {
+            "label": "Conhecer o blog",
+            "url": "https://moneybrainia.com.br/blog",
             "type": "website"
           }
         ]
@@ -188,7 +201,9 @@
     "copyright": "© 2026 Everton Leão. Todos os direitos reservados.",
     "links": "Links Rápidos",
     "social": "Siga-me",
-    "note": "Aberto a oportunidades remotas e internacionais"
+    "note": "Aberto a oportunidades remotas e internacionais",
+    "tagline": "Full Stack .NET · APIs e integrações · apps Android em produção",
+    "rights": "Todos os direitos reservados."
   },
   "common": {
     "loading": "Carregando...",
@@ -209,7 +224,14 @@
       "CI/CD",
       "Agile",
       "Performance Optimization",
-      "Unit Testing"
+      "Unit Testing",
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "AWS",
+      "Google Play",
+      "Firebase Crashlytics",
+      "ForjaX Mobile"
     ],
     "languageDefault": "pt",
     "resumeFiles": {
@@ -217,8 +239,8 @@
       "en": "/cv-everton-leao-en.pdf"
     },
     "links": {
-      "linkedin": "https://www.linkedin.com/in/everton-leao",
-      "github": "https://github.com/everton-leao"
+      "linkedin": "https://www.linkedin.com/in/evertonle%C3%A3otrue/",
+      "github": "https://github.com/VToum"
     }
   }
 }
