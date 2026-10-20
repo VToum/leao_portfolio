@@ -16,7 +16,8 @@ export const AboutSection: React.FC = () => {
     highlights?: string[];
   }
 
-  const introParagraphs = (t('about.intro') as string).split(/\n\s*\n/).filter(Boolean);\n  const skills = (t('about.skills', { returnObjects: true }) as string[]) || [];
+  const introParagraphs = (t('about.intro') as string).split(/\n\s*\n/).filter(Boolean);
+  const skills = (t('about.skills', { returnObjects: true }) as string[]) || [];
   const experiences = (t('about.experiences', { returnObjects: true }) as ExperienceItem[]) || [];
 
   // 🌍 Detecta idioma corretamente
