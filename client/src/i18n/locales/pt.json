@@ -181,7 +181,7 @@
   },
   "contact": {
     "title": "Entre em Contato",
-    "subtitle": "Vamos conversar sobre vagas ou projetos. Respondo rápido pelo WhatsApp!",
+    "subtitle": "Para conversar sobre oportunidades e projetos de desenvolvimento, entre em contato pelo LinkedIn.",
     "form": {
       "name": "Nome Completo",
       "email": "Seu melhor Email (Opcional)",
@@ -195,7 +195,8 @@
       "email": "Email",
       "phone": "WhatsApp / Telefone",
       "location": "São Paulo, Brasil"
-    }
+    },
+    "note": "Uso LinkedIn e GitHub para conversas profissionais e detalhes dos projetos."
   },
   "footer": {
     "copyright": "© 2026 Everton Leão. Todos os direitos reservados.",
