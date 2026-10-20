@@ -15,7 +15,7 @@ export const Footer: React.FC = () => {
               <h3 className="text-lg font-semibold text-foreground">Everton Leão</h3>
             </div>
             <p className="text-sm text-muted-foreground">
-              Full Stack .NET Developer | Building scalable web applications
+              {t('footer.tagline')}
             </p>
           </div>
 
@@ -55,7 +55,7 @@ export const Footer: React.FC = () => {
             <h4 className="font-semibold text-foreground">{t('footer.social')}</h4>
             <div className="flex gap-4">
               <a
-                href="https://github.com/everton-leao"
+                href="https://github.com/VToum"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -64,20 +64,13 @@ export const Footer: React.FC = () => {
                 GitHub
               </a>
               <a
-                href="https://www.linkedin.com/in/evertonleao"
+                href="https://www.linkedin.com/in/evertonle%C3%A3otrue/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="LinkedIn"
               >
                 LinkedIn
-              </a>
-              <a
-                href="mailto:everleao@gmail.com"
-                className="text-muted-foreground hover:text-primary transition-colors"
-                aria-label="Email"
-              >
-                Email
               </a>
             </div>
           </div>
@@ -89,7 +82,7 @@ export const Footer: React.FC = () => {
         {/* Copyright */}
         <div className="text-center text-sm text-muted-foreground">
           <p>
-            © {currentYear} Everton Leão. All rights reserved.
+            © {currentYear} Everton Leão. {t('footer.rights')}
           </p>
         </div>
       </div>

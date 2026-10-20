@@ -40,8 +40,8 @@ export const HeroSection: React.FC = () => {
           </div>
 
           {/* Title */}
-          <h1 className="text-4xl sm:text-6xl md:text-7xl font-extrabold text-foreground tracking-tight leading-tight">
-            Desenvolvedor <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 via-teal-400 to-cyan-500">Full Stack .NET</span> &amp; <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-indigo-500">Mobile</span>
+          <h1 className="mx-auto max-w-4xl text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight leading-tight text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 via-teal-400 to-cyan-500">
+            {t('hero.title')}
           </h1>
 
           {/* Subtitle */}
@@ -53,15 +53,15 @@ export const HeroSection: React.FC = () => {
           <div className="flex flex-wrap justify-center gap-3 pt-2">
             <div className="flex items-center gap-2 px-3.5 py-1.5 bg-card/80 border border-border rounded-lg text-xs md:text-sm text-foreground font-medium shadow-sm">
               <Smartphone className="h-4 w-4 text-emerald-500" />
-              <span>4 Apps Publicados na Play Store</span>
+              <span>{t('hero.highlights.apps')}</span>
             </div>
             <div className="flex items-center gap-2 px-3.5 py-1.5 bg-card/80 border border-border rounded-lg text-xs md:text-sm text-foreground font-medium shadow-sm">
               <Code2 className="h-4 w-4 text-blue-500" />
-              <span>C# .NET &amp; React Native</span>
+              <span>{t('hero.highlights.stack')}</span>
             </div>
             <div className="flex items-center gap-2 px-3.5 py-1.5 bg-card/80 border border-border rounded-lg text-xs md:text-sm text-foreground font-medium shadow-sm">
               <ShieldCheck className="h-4 w-4 text-teal-500" />
-              <span>Offline-First &amp; IA</span>
+              <span>{t('hero.highlights.products')}</span>
             </div>
           </div>
 

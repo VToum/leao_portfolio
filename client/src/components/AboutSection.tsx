@@ -16,6 +16,7 @@ export const AboutSection: React.FC = () => {
     highlights?: string[];
   }
 
+  const introParagraphs = (t('about.intro') as string).split(/\n\s*\n/).filter(Boolean);
   const skills = (t('about.skills', { returnObjects: true }) as string[]) || [];
   const experiences = (t('about.experiences', { returnObjects: true }) as ExperienceItem[]) || [];
 
@@ -57,9 +58,13 @@ export const AboutSection: React.FC = () => {
               <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
                 {t('about.title')}
               </h2>
-              <p className="text-lg text-muted-foreground leading-relaxed">
-                {t('about.intro')}
-              </p>
+              <div className="space-y-4">
+                {introParagraphs.map((paragraph, index) => (
+                  <p key={index} className="text-lg text-muted-foreground leading-relaxed">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
             </div>
 
             {/* Interactive Experience Cards */}
@@ -114,7 +119,7 @@ export const AboutSection: React.FC = () => {
                         {isExpanded && exp.highlights && exp.highlights.length > 0 && (
                           <div className="mt-4 pt-4 border-t border-border/60 animate-in fade-in duration-300">
                             <p className="text-xs font-semibold uppercase tracking-wider text-primary mb-2.5">
-                              Atividades &amp; Especialidades:
+                              {t('about.activitiesLabel')}:
                             </p>
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                               {exp.highlights.map((highlight, hIdx) => (
