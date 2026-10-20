@@ -1,11 +1,10 @@
 import React, { useState } from 'react';
 import { useTranslation } from '@/hooks/useTranslation';
 import { Button } from '@/components/ui/button';
-import { Download, ChevronDown, ChevronUp, CheckCircle2 } from 'lucide-react';
-import { getAssetPath } from '@/utils/assets';
+import { Linkedin, ChevronDown, ChevronUp, CheckCircle2 } from 'lucide-react';
 
 export const AboutSection: React.FC = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const [expandedId, setExpandedId] = useState<string | null>('avipam');
 
   interface ExperienceItem {
@@ -21,15 +20,7 @@ export const AboutSection: React.FC = () => {
   const experiences = (t('about.experiences', { returnObjects: true }) as ExperienceItem[]) || [];
 
   // 🌍 Detecta idioma corretamente
-  const isEnglish = i18n.language.startsWith('en');
-
-  const resumeFileName = isEnglish
-    ? 'Everton_Leao_Full_Stack_DotNet_EN.pdf'
-    : 'Everton_Leao_Desenvolvedor_FullStack_PT.pdf';
-
-  const resumeUrl = getAssetPath(resumeFileName);
-
-  const toggleExpand = (id?: string) => {
+const toggleExpand = (id?: string) => {
     if (!id) return;
     setExpandedId((prev) => (prev === id ? null : id));
   };
@@ -158,15 +149,12 @@ export const AboutSection: React.FC = () => {
 
             {/* 📄 Download automático por idioma */}
             <div>
-              <a href={resumeUrl} download={resumeFileName}>
-                <Button
-                  size="lg"
-                  className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold"
-                >
-                  <Download className="mr-2 h-5 w-5" />
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold" asChild>
+                <a href="https://www.linkedin.com/in/evertonle%C3%A3otrue/" target="_blank" rel="noopener noreferrer">
+                  <Linkedin className="mr-2 h-5 w-5" />
                   {t('about.cta')}
-                </Button>
-              </a>
+                </a>
+              </Button>
             </div>
           </div>
 
